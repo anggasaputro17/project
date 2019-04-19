@@ -7,54 +7,20 @@
 
 .parallax {
   /* The image used */
-  background: url('https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_01_20192923.jpg');
-  background-size:70% 70%!important;
-
-  /* Full height */
-  height: 400px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: url(https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_04_28093215.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-/*.btn-dy{position:absolute;top:50%;z-index:1;width:0;height:0;margin:-24px 0 0;padding:0;overflow:hidden;text-indent:25px;background-color:transparent;border-style:solid;border-color:transparent;cursor:pointer;-webkit-transition:border-color 0.15s;transition:border-color 0.15s;}
-.btn-dy--prev{left:-30px;background-size:7575px 90px;background-image:url(https://static-sg.zacdn.com/images/local/icons/sprites/2018-10-26-1540538406760/desktop_icons-sprite.svg);width:18px;height:30px;background-position:-1160px -2px;}
-.btn-dy--next{right:-25px;background-size:7575px 90px;background-image:url(https://static-sg.zacdn.com/images/local/icons/sprites/2018-10-26-1540538406760/desktop_icons-sprite.svg);width:22px;height:35px;background-position:-1185px 0;}
-*/
-.cms-wrapper{width:996px;height:600px;position:relative;margin:auto;}
-/** * Padding is set relative to the width * of the element, so here padding-top:60% is * a percentage of the width. This allows us * to set the height as a ratio of the width * */
-.cms-carousel{width:996px;height:600px;position:relative;overflow:hidden;}
-.cms-inner{width:996px;height:600px;top:0;left:0;}
-/** * ========================== * Animation styles * * Notes:* 1. We use z-index to position active slides in-front * of non-active slides * 2. We set right:0 and left:0 on .slide to provide us with * a default positioning on both sides of the slide. This allows * us to trigger JS and CSS3 animations easily * */
-.slide{width:996px;height:600px;position:absolute;top:0;right:0;left:0;z-index:1;opacity:0;}
-.slide.active,.slide.left,.slide.right{z-index:2;opacity:1;}
-/** * ========================== * JS animation styles * * We use jQuery.animate to control the sliding animations * when CSS3 animations are not available. In order for * the next slide to slide in from the right, we need * to change the left:0 property of the slide to left:auto * */
-.js-reset-left{left:auto}
-/** * ========================== * CSS animation styles * * .slide.left and .slide.right set-up * the to-be-animated slide so that it can slide * into view. For example, a slide that is about * to slide in from the right will:* 1. Be positioned to the right of the viewport (right:-100%) * 2. Slide in when the style is superseded with a more specific style (right:0%) * */
-.slide.left{left:-100%;right:0;}
-.slide.right{right:-100%;left:auto;}
-.transition .slide.left{left:0%}
-.transition .slide.right{right:0%}
-/** * The following classes slide the previously active * slide out of view before positioning behind the * currently active slide * */
-.transition .slide.shift-right{right:100%;left:auto}
-.transition .slide.shift-left{left:100%;right:auto}
-/** * This sets the CSS properties that will animate. We set the * transition-duration property dynamically via JS. * We use the browser's default transition-timing-function * for simplicity's sake * * It is important to note that we are using CodePen's inbuilt * CSS3 property prefixer. For your own projects, you will need * to prefix the transition and transform properties here to ensure * reliable support across browsers * */
-.transition .slide{transition-property:right, left, margin;}
-/** * ========================== * Indicators * */
-.indicators{width:996px;height:328px;bottom:0;z-index:4;padding:0;text-align:center;}
-.indicators li{width:13px;height:13px;display:inline-block;margin:5px;background:#fff;list-style-type:none;border-radius:50%;cursor:pointer;transition:background 0.3s ease-out;}
-.indicators li.active{background:gray}
-.indicators li:hover{background-color:#2b2b2b}
-/** * ========================== * Arrows * */
-.arrow{background:url("https://static-ph.zacdn.com/cms/landingpages/orignal_prnxt.png") no-repeat scroll -33px 0 transparent;height:57px;position:absolute;right:0;text-indent:100px;top:23%;margin-top:-26px;width:33px;z-index:10;opacity:.5;padding-top:75px;}
-.arrow:hover{opacity:1}
-.arrow-right{margin-top:35px;}
-.arrow-left{left:0px;transform:rotate(180deg);padding-top:50px;}
-/** * ========================== * For demo purposes only * * Please note that the styles below are used * for the purposes of this demo only. There is no need * to use these in any of your own projects * */
-.slide{text-align:center;background-size:996px 328px;background-repeat:no-repeat;}
+.parallax2 {
+  /* The image used */
+    background: url(https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_08_28093215.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .txtCenter{text-align:center;}
 .cms-spacer-20{width:100%;height:25px;}
@@ -88,64 +54,62 @@
 </style>
 
 <div id='cms-csaTrackingContainer'>
-    <div class="parallax"></div> <span style="color:#fff;font-size:35px;padding-left:30px">JANUARY 2019<br>Urban Pop</span> 
-    <div class='cms-row'>
-        <div class='cms-full'>
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_02_20192923.jpg'>
+    <div class="cms-row">
+        <div class="cms-full">
+            <div class="parallax"></div>
         </div>
     </div>
+
     <div class='cms-row'>
-        <div class='cms-full cms-top-brands'>
-            <a href="/women/all-products/?cmpgn_one=urbanpop">
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_03_20192923.png'>
-            </a>
+        <div class='cms-half'>          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_05_28093215.gif'>
+        </div>
+        <div class='cms-half'>          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_06_28093215.jpg'>
         </div>
     </div>
+
+      <div class='cms-row'>
+          <div class='cms-full'>          
+              <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_07_28093215.jpg'>
+          </div>
+      </div>
+
     <div class='cms-row'>
-        <div class='cms-full'>
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_04_20192923.jpg'>
-        </div>
-    </div>
-    <div class='cms-row'>
-        <div class='cms-full'>
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_05_20192923.jpg'>
-        </div>
-    </div>
-    <div class="cms-row cms-full">
-        <div class="cms-wrapper">
-            <div class="cms-carousel">
-                <div class="cms-inner">
-                    <div class="slide active">
-                        <div id="dy-singles-dks-cat1">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_1_20192923rev.jpg" width="322" height="483">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_2_20192923rev.jpg" width="322" height="483">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_3_20192923rev.jpg" width="322" height="483">
-                        </div>
-                    </div>
-                    <div class="slide ">
-                        <div id="dy-singles-dks-cat2">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_4_20192923rev.jpg" width="322" height="483">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_5_20192923rev.jpg" width="322" height="483">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/LOOKBOOK_URBANPOP_06_6_20192923rev.jpg" width="322" height="483">
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="arrow arrow-left"></div>
-                <div class="arrow arrow-right"></div>--></div>
+        <div class='cms-full'>          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_08_28093215.jpg'>
         </div>
     </div>
     <div class='cms-row'>
         <div class='cms-full cms-top-brands'>
-             <a href="/women/all-products/?cmpgn_one=urbanpop">
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_07_20192923.png'>
-            </a>
+        <a href="/women/all-products/?cmpgn_one=moderntravel">          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_09_28093215.jpg'>
+        </a>
+        </div>
+    </div>
+
+    <div class="cms-row">
+        <div class="cms-full">
+            <div class="parallax2"></div>
+        </div>
+    </div>
+
+    <div class='cms-row'>
+        <div class='cms-half'>          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_11_28093215.jpg'>
+        </div>
+        <div class='cms-half'>          
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_12_28093215.gif'>
         </div>
     </div>
     <div class='cms-row'>
-        <div class='cms-full'>
-            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_URBANPOP_08_20192923.jpg'>
+        <div class='cms-full cms-top-brands'>   
+        <a href="/women/all-products/?cmpgn_one=moderntravel">       
+            <img width='100%' src='https://static-id.zacdn.com/cms/staticpages/LOOKBOOK_MODERNTRAVELLER_13_28093215.jpg'>
+        </a>
         </div>
     </div>
+
     <div class="cms-row">
         <div class="cms-full mtxl mbxl">
             <div class="font30 txtCenter cms-bold">More Inspirations</div>
@@ -157,8 +121,8 @@
             <div class="cms-half">
                 <div class="cms-box-zoom lfloat">
                     <div class="zoom">
-                        <a href="/lookbook-modern-traveler/?csa=lookbookurbanpopdsk">
-                            <img src="https://static-id.zacdn.com/cms/lookbook/2048X1387_LOOKBOOK_01_021909231.jpg" width="100%" />
+                        <a href="/lookbook-urban-pop/?csa=lookbookurbanpopdsk">
+                            <img src="https://static-id.zacdn.com/cms/lookbook/2048X1387_LOOKBOOK_02_021909231.jpg" width="100%" />
                         </a>
                     </div>
                 </div>
@@ -166,7 +130,7 @@
                     <div class="" style="border-left:3px solid #a7a7a7">
                         <div class="pl20">
                             <div class="txtClrGrey">January 2019</div>
-                            <div class="font20">The Modern <span class="txtClrGrey">Traveler</span>
+                            <div class="font20">Urban <span class="txtClrGrey">Pop</span>
                             </div>
                         </div>
                     </div>
@@ -197,9 +161,8 @@
     </div>
 </div>
 
-
 <script>
-    var csaLabel = 'shopLookbookUrbanPop';
+    var csaLabel = 'shopLookbookModernTraveler';
 
     $('#cms-csaTrackingContainer a').each(function () {
         var urlParam1 = '?csa=' + csaLabel;
@@ -213,123 +176,4 @@
         }
 
     });
-
-    ! function (t) {
-        "function" == typeof define && define.amd ? define(["jquery"], t) : "undefined" != typeof exports ? module.exports = t(require("jquery")) : t(jQuery)
-    }(function (s) {
-        var e, r = (e = 0, function (t, i) {
-            this.defaults = {
-                slideDuration: "14000",
-                speed: 500,
-                arrowRight: ".arrow-right",
-                arrowLeft: ".arrow-left"
-            }, this.settings = s.extend({}, this, this.defaults, i), this.initials = {
-                currSlide: 0,
-                $currSlide: null,
-                totalSlides: !1,
-                csstransitions: !1
-            }, s.extend(this, this.initials), this.$el = s(t), this.changeSlide = s.proxy(this.changeSlide, this), this.init(), this.instanceUid = e++
-        });
-        r.prototype.init = function () {
-            this.csstransitionsTest(), this.$el.addClass("zippy-carousel"), this.build(), this.events(), this.activate(), this.initTimer()
-        }, r.prototype.csstransitionsTest = function () {
-            var t = document.createElement("modernizr"),
-                i = ["transition", "WebkitTransition", "MozTransition", "OTransition", "msTransition"];
-            for (var e in i) {
-                var s = i[e],
-                    r = void 0 !== t.style[s] && s;
-                if (r) {
-                    this.csstransitions = r;
-                    break
-                }
-            }
-        }, r.prototype.addCSSDuration = function () {
-            var t = this;
-            this.$el.find(".slide").each(function () {
-                this.style[t.csstransitions + "Duration"] = t.settings.speed + "ms"
-            })
-        }, r.prototype.removeCSSDuration = function () {
-            var t = this;
-            this.$el.find(".slide").each(function () {
-                this.style[t.csstransitions + "Duration"] = ""
-            })
-        }, r.prototype.build = function () {
-            var t = this.$el.append('<ul class="indicators" >').find(".indicators");
-            this.totalSlides = this.$el.find(".slide").length;
-            for (var i = 0; i < this.totalSlides; i++) t.append("<li data-index=" + i + ">")
-        }, r.prototype.activate = function () {
-            this.$currSlide = this.$el.find(".slide").eq(0), this.$el.find(".indicators li").eq(0).addClass("active")
-        }, r.prototype.events = function () {
-            s("body").on("click", this.settings.arrowRight, {
-                direction: "right"
-            }, this.changeSlide).on("click", this.settings.arrowLeft, {
-                direction: "left"
-            }, this.changeSlide).on("click", ".indicators li", this.changeSlide)
-        }, r.prototype.clearTimer = function () {
-            this.timer && clearInterval(this.timer)
-        }, r.prototype.initTimer = function () {
-            this.timer = setInterval(this.changeSlide, this.settings.slideDuration)
-        }, r.prototype.startTimer = function () {
-            this.initTimer(), this.throttle = !1
-        }, r.prototype.changeSlide = function (t) {
-            if (!this.throttle) {
-                this.throttle = !0, this.clearTimer();
-                var i = this._direction(t);
-                if (this._next(t, i)) {
-                    var e = this.$el.find(".slide").eq(this.currSlide).addClass(i + " active");
-                    this.csstransitions ? this._cssAnimation(e, i) : this._jsAnimation(e, i)
-                }
-            }
-        }, r.prototype._direction = function (t) {
-            return void 0 !== t ? void 0 === t.data ? "right" : t.data.direction : "right"
-        }, r.prototype._next = function (t, i) {
-            var e = void 0 !== t ? s(t.currentTarget).data("index") : void 0;
-            switch (!0) {
-            case void 0 !== e:
-                if (this.currSlide == e) return this.startTimer(), !1;
-                this.currSlide = e;
-                break;
-            case "right" == i && this.currSlide < this.totalSlides - 1:
-                this.currSlide++;
-                break;
-            case "right" == i:
-                this.currSlide = 0;
-                break;
-            case "left" == i && 0 === this.currSlide:
-                this.currSlide = this.totalSlides - 1;
-                break;
-            case "left" == i:
-                this.currSlide--
-            }
-            return !0
-        }, r.prototype._cssAnimation = function (t, i) {
-            setTimeout(function () {
-                this.$el.addClass("transition"), this.addCSSDuration(), this.$currSlide.addClass("shift-" + i)
-            }.bind(this), 100), setTimeout(function () {
-                this.$el.removeClass("transition"), this.removeCSSDuration(), this.$currSlide.removeClass("active shift-left shift-right"), this.$currSlide = t.removeClass(i), this._updateIndicators(), this.startTimer()
-            }.bind(this), 100 + this.settings.speed)
-        }, r.prototype._jsAnimation = function (t, i) {
-            var e = this;
-            "right" == i && e.$currSlide.addClass("js-reset-left");
-            var s = {};
-            s[i] = "0%";
-            var r = {};
-            r[i] = "100%", this.$currSlide.animate(r, this.settings.speed), t.animate(s, this.settings.speed, "swing", function () {
-                e.$currSlide.removeClass("active js-reset-left").attr("style", ""), e.$currSlide = t.removeClass(i).attr("style", ""), e._updateIndicators(), e.startTimer()
-            })
-        }, r.prototype._updateIndicators = function () {
-            this.$el.find(".indicators li").removeClass("active").eq(this.currSlide).addClass("active")
-        }, s.fn.Zippy = function (e) {
-            return this.each(function (t, i) {
-                i.Zippy = new r(i, e)
-            })
-        }
-    });
-    var args = {
-        arrowRight: ".arrow-right",
-        arrowLeft: ".arrow-left",
-        speed: 2e3,
-        slideDuration: 1500
-    };
-    $(".cms-carousel").Zippy(args);
 </script>
