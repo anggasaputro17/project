@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="//static.zalora.com/css/onsite.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, height=device-height"/>
+<style type="text/css">
+/*text*/
+.cms-font-16{font-size:16px;}
+.cms-font-20{font-size:25px;}
+.txtCenter{text-align:center;}
+.cms-bold{font-weight:700;}
+.lfloat{float:left;}
+.rfloat{float:right;}
+/*layout*/
+.cms-full{width:100%;float:left;}
+.cms-half{width:50%;}
+.cms-full, .cms-half{display:inline-block;vertical-align:top;margin:0 -4px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;}
+.cms-mt10{margin-top:10px;}
+.cms-mt20{margin-top:20px;}
+.cms-mb10{margin-bottom:10px;}
+.cms-mb20{margin-bottom:20px;}
+/*image slider*/
+.slide-container{-webkit-overflow-scrolling:touch;overflow-x:scroll;white-space:nowrap;}
+.product-thumb-container-1{text-align:center;white-space:normal;margin-bottom:10px;display:inline-block;vertical-align:top;position:relative;background:white;cursor:pointer;}
+.cms-banner-carousel{width:110%;}
+
+</style>
